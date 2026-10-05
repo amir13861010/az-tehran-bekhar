@@ -55,7 +55,7 @@ export default async function AdminProductsPage() {
                       {p.name}
                     </div>
                     <div className="text-sm text-neutral-500 truncate">
-                      {p.category} • {p.price.toLocaleString("fa-IR")} تومان
+                      {p.categorySlug} • {p.price.toLocaleString("fa-IR")} تومان
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -44,13 +43,12 @@ export default function Home() {
             لیستت را بفرست، خرید و ارسال با ما.
           </p>
 
-          <Button
-            asChild
-            size="lg"
-            className="bg-brand-cream text-brand-green hover:bg-brand-cream/90 text-base md:text-lg px-7 py-5 md:px-10 md:py-7 rounded-full"
+          <Link
+            href="/products"
+            className="inline-flex items-center justify-center bg-brand-cream text-brand-green hover:bg-brand-cream/90 text-base md:text-lg font-bold px-7 py-5 md:px-10 md:py-7 rounded-full transition-colors"
           >
-            <Link href="/products">انتخاب محصول</Link>
-          </Button>
+            انتخاب محصول
+          </Link>
         </div>
       </div>
     </main>

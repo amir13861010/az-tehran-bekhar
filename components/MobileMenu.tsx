@@ -23,7 +23,6 @@ import {
 } from "lucide-react";
 import type { Menu } from "@/lib/types";
 
-// رنگ چرخشی برای دسته‌بندی‌ها
 const categoryColors = [
   "bg-amber-100 text-amber-700",
   "bg-emerald-100 text-emerald-700",
@@ -78,15 +77,15 @@ export default function MobileMenu({
         {/* محتوا */}
         <div className="flex-1 overflow-y-auto px-4 py-5 flex flex-col gap-1">
           {/* آکاردئون بلاگ بازار */}
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             <AccordionItem value="blog" className="border-none">
-              <AccordionTrigger className="text-sm font-bold text-brand-brown hover:text-brand-green hover:no-underline px-3 py-3 rounded-xl hover:bg-brand-cream/60 transition-colors [&[data-state=open]]:bg-brand-cream/70 [&>svg]:hidden">
+              <AccordionTrigger className="text-sm font-bold text-brand-brown hover:text-brand-green hover:no-underline px-3 py-3 rounded-xl hover:bg-brand-cream/60 transition-colors [&>svg]:hidden">
                 <span className="flex items-center gap-3 w-full">
                   <span className="w-9 h-9 rounded-xl bg-brand-cream flex items-center justify-center text-brand-brown">
                     <BookOpen className="w-4 h-4" strokeWidth={2} />
                   </span>
                   <span className="flex-1 text-right">بلاگ بازار</span>
-                  <ChevronLeft className="w-4 h-4 opacity-40 transition-transform data-[state=open]:-rotate-90" />
+                  <ChevronLeft className="w-4 h-4 opacity-40 transition-transform" />
                 </span>
               </AccordionTrigger>
               <AccordionContent className="pt-2 pb-1">
