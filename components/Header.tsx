@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute top-0 inset-x-0 z-50">
+      <header className="absolute top-0 inset-x-0 z-50 p-5">
         <div className="flex items-center justify-between px-6 md:px-16 py-6">
           <div className="flex items-center">
             <nav className="hidden lg:flex items-center gap-10 text-brand-cream">
